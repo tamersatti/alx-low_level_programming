@@ -6,9 +6,9 @@
  * idxs: index where the new node is added
  * in: data to insert in the new node
  */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned intidxs, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idxs, int in)
 {
-	unsignedint in;
+	unsigned int i;
 	listint_t *news;
 	listint_t *temp = *head;
 
@@ -16,23 +16,23 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned intidxs, int n)
 	if (!news || !head)
 		return (NULL);
 
-	news->in = in;
+	news->n = in;
 	news->next = NULL;
 
 	if (idxs == 0)
 	{
 		news->next = *head;
-		*head = new;
-		return (new);
+		*head = news;
+		return (news);
 	}
 
-	for (in = 0; temp && in<idxs; i++)
+	for (i = 0; temp && i<idxs; i++)
 	{
-		if (in == idxs - 1)
+		if (i == idxs - 1)
 		{
 			news->next = temp->next;
-			temp->next = new;
-			return (new);
+			temp->next = news;
+			return (news);
 		}
 		else
 			temp = temp->next;
