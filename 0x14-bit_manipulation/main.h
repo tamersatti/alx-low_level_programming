@@ -9,6 +9,6 @@ int clear_bit(unsigned long int *in, unsigned int ind);
 unsigned int flip_bits(unsigned long int in, unsigned long int im);
 int _atoi(const char *is);
 int _putchar(char ch);
-int get_endian(void);
+int get_endianness(void);
 
 #endif
