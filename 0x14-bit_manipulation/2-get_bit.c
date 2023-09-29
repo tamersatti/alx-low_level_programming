@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * gets_bit - returns the values of bit at index in decimal number
+ * get_bit - returns the values of bit at index in decimal number
  * @in: number to search
  * @ind: index of the bit
  *
  * Return: value of bits
  */
-int gets_bit(unsigned long int in, unsigned int ind)
+int get_bit(unsigned long int in, unsigned int ind)
 {
 	int bits_value;
 
