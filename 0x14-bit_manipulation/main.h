@@ -2,7 +2,7 @@
 #define MAIN_H
 
 unsigned int binary_to_uint(const char *bin);
-void print_bin(unsigned long int in);
+void print_binary(unsigned long int in);
 int gets_bit(unsigned long int in, unsigned int ind);
 int sets_bit(unsigned long int *in, unsigned int ind);
 int clears_bit(unsigned long int *in, unsigned int ind);
