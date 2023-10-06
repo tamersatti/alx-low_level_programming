@@ -6,9 +6,9 @@ char *create_buffer(char *file);
 void close_file(int filed);
 
 /**
- * create_buffer Allocates 1024 bytes for a buffer.
- * @file: The name of the file buffer is storing chars for.
- * Return: A pointer to the newly-allocated buffer.
+ * create_buffer - the function that Allocates 1024 bytes for a buffer.
+ * @file:name of file buffer is  to storing chars for.
+ * Return: A pointer to newly allocated buffers.
  */
 char *create_buffer(char *file)
 {
@@ -45,15 +45,10 @@ void close_file(int filed)
 
 /**
  * main - Copies the contents of a file to another file.
- * @ac: The number of arguments supplied to the program.
- * @av: An array of pointers to the arguments.
+ * @ac: numbers of arguments supplied to program.
+ * @av: array of pointers .
  *
  * Return: 0 on success.
- *
- * Description: If the argument count is incorrect - exit code 97.
- * If file_from does not exist or cann’t be read - exit code 98.
- * If file_to cannot be created or written to - exit code 99.
- * If file_to or file_from cannot be closed - exit code 100.
  */
 int main(int ac, char *av[])
 {
