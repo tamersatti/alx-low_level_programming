@@ -1,1 +1,2 @@
-0x00. C - Hello, World
+0x18. C - Dynamic libraries
+
